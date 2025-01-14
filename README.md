@@ -8,17 +8,19 @@ A estrutura do projeto está organizada da seguinte forma:
 
 Movie_Recommendation/
 │
-├── data_loader.py       # Carregamento e processamento de dados
-├── recommender.py       # Função de recomendação de filmes
-├── main.py              # Interação com o usuário
-└── requirements.txt     # Dependências do projeto
+├── data_loader.py          # Carregamento e processamento de dados
+├── recommender.py          # Função de recomendação de filmes
+├── main.py                 # Interação com o usuário
+└── exploracao_dados.py     # Análise exploratória do dataset
+└── requirements.txt        # Dependências do projeto
 
 
-### Descrição dos Arquivos necessários
+### Descrição dos Arquivos 
 
 - **`data_loader.py`**: Contém funções para carregar os dados dos filmes, avaliações e tags. Também contém a função para contar a ocorrência de cada gênero nos filmes.
 - **`recommender.py`**: Contém as funções para calcular a similaridade entre os filmes usando o método de similaridade de cosseno e para recomendar filmes com base no título do filme fornecido pelo usuário.
 - **`main.py`**: O arquivo principal do projeto, que interage com o usuário, carrega os dados e exibe as recomendações de filmes.
+- **`exploracao_dados.py`**: Realiza uma análise exploratória do dataset, gerando gráficos para entender a distribuição das avaliações, gêneros, tags, e outras características importantes dos filmes.
 - **`movies.csv`**: Contém informações sobre os filmes, incluindo títulos e gêneros.
 - **`ratings.csv`**: Contém informações sobre as avaliações dos usuários para os filmes.
 - **`tags.csv`**: Contém informações sobre as tags associadas aos filmes.
@@ -81,6 +83,20 @@ Carregar dados: Os dados dos filmes, avaliações e tags são carregados a parti
 Contar gêneros: A ocorrência de cada gênero é calculada para fins de análise.
 Calcular similaridade: Utiliza a similaridade de cosseno para calcular a semelhança entre os filmes com base nos gêneros e nas tags.
 Recomendar filmes: O usuário fornece um título de filme com o ano de lançamento entre parênteses, e o sistema retorna uma lista dos filmes mais semelhantes.
+
+🔍 Análise Exploratória de Dados (extra)
+O arquivo exploracao_dados.py realiza uma análise exploratória do dataset com o objetivo de entender melhor as características dos filmes, avaliações, tags e gêneros. As principais etapas incluem:
+
+- Leitura dos Dados: Carrega os arquivos movies.csv, tags.csv e ratings.csv usando a biblioteca pandas.
+- Análise Básica: Número de filmes, usuários, tags e avaliações.
+Exibição das primeiras linhas dos dados.
+- Visualizações:
+Distribuição das avaliações dos filmes.
+Filmes mais avaliados e filmes com melhores avaliações médias.
+Gêneros mais populares.
+Contagem de filmes por ano.
+- Contagem de Gêneros: Análise da popularidade dos gêneros presentes no dataset, com visualizações das frequências de ocorrência de cada gênero.
+A execução desse script permite uma visualização clara de várias métricas e características do dataset, facilitando a compreensão do comportamento dos filmes e das avaliações.
 
 ## 📜 Licença
 
