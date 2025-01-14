@@ -1,0 +1,2 @@
+# Movie-Recommendation
+ Este projeto é um sistema de recomendação de filmes baseado em similaridade de conteúdo utilizando aprendizado de máquina. Ele foi desenvolvido utilizando o banco de dados MovieLens, que contém informações sobre mais de 10.000 filmes, incluindo avaliações dos usuários, tags e gêneros. O sistema permite que o usuário forneça o nome de um filme e o ano de lançamento, e receba recomendações de filmes semelhantes com base em seu conteúdo e nas avaliações médias dos filmes.
